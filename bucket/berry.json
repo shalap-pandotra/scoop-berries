@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "description": "A small, fast terminal music player for Windows Terminal, with album art",
+    "homepage": "https://github.com/shalap-pandotra/berry-player",
+    "license": "MIT",
+    "notes": "Album covers need Windows Terminal 1.22 or newer. Run 'berry' to start, '?' inside it for the keys.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shalap-pandotra/berry-player/releases/download/v0.2.0/berry-v0.2.0-windows-x64.zip",
+            "hash": "3CA55F06D1ADC297F22382AE3DDEB5C3D49E5AA842C2531DB98E729D2F8C8179"
+        }
+    },
+    "bin": "berry.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/shalap-pandotra/berry-player/releases/download/v$version/berry-v$version-windows-x64.zip"
+            }
+        }
+    }
+}
